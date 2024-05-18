@@ -9,20 +9,24 @@ import SwiftUI
 
 struct SearchView: View {
     @ObservedObject var viewModelSV = BrastlewarkViewModel()
-    @State var SearchText = ""
+    //@State var SearchText = ""
     
     var body: some View {
         NavigationStack {
             VStack {
-                    SearchBarView(viewModel: viewModelSV, SearchText: $SearchText)
+                SearchBarView(viewModel: viewModelSV)
                 .padding(.horizontal)
                 
                 List {
                     Section(header: Text("Ingresa la Profesión del Gnomo \n para realizar la búsqueda")) {
-                        ForEach(viewModelSV.DataModel?.brastlewark ?? [], id: \.id) { habitant in
+                        ForEach(viewModelSV.filterHabitants ?? [], id: \.id) { habitant in
                             VStack(alignment: .leading) {
                                 Text("**Name: \(habitant.name)**")
-                                Text("*Profession: \(habitant.professions.first ?? "")*")
+                                Text("*Profession: \(habitant.professions.joined(separator: ","))*") {
+                                    NavigationLink( destination: PerfilView()) {
+                                    }
+                                    
+                                }
                             }
                             
                         }
@@ -31,13 +35,14 @@ struct SearchView: View {
                 
             }
             .navigationTitle("Habitants Finder")
-//            .onAppear {
-//                viewModelSV.getDataFDM()
-//            }
+            .onAppear {
+                viewModelSV.getDataFDM()
+            }
         }
         
     }
 }
+
 
 #Preview {
     SearchView()

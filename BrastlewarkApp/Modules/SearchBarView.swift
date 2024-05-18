@@ -9,16 +9,16 @@ import SwiftUI
 
 struct SearchBarView: View {
     @State var viewModel: BrastlewarkViewModel
-    @Binding var SearchText: String
+    //@State var SearchText: String
     
     var body: some View {
         HStack {
-            TextField("Profesion...", text: $SearchText)
+            TextField("Profesion...", text: $viewModel.searchText)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.horizontal,10)
 
             Button(action: {
-                viewModel.getDataFDM()
+                viewModel.filterHabProfession()
             }) {
                 Image(systemName: "magnifyingglass")
                     .padding(10)

@@ -6,14 +6,16 @@
 //
 
 import Foundation
+
 import SwiftUI
 
 class BrastlewarkViewModel: ObservableObject {
-    @Published var DataModel: BrastlewarkDataModel?
+    //@Published var DataModel: BrastlewarkDataModel?
     @Published var gnomes: [Habitant]?
+    @Published var filterHabitants: [Habitant]?
     @Published var searchText = ""
     @Published var error: Error?
-    //var searchText = ""
+    
     
     
     private let apiClient = ApiClient()
@@ -24,7 +26,8 @@ class BrastlewarkViewModel: ObservableObject {
             DispatchQueue.main.async {
                 switch result {
                 case.success(let results):
-                    self.DataModel = results
+                    self.gnomes = results.brastlewark
+                    self.filterHabitants = results.brastlewark
                     print("Results \(results)")
                 case.failure(let error):
                     print("Error fetching results \(error)")
@@ -33,16 +36,15 @@ class BrastlewarkViewModel: ObservableObject {
         }
     }
     
-//    var filterGnomes: [Habitant]? {
-//        if searchText.isEmpty {
-//            return gnomes
-//        } else {
-//            return gnomes?.filter { gnome in
-//                gnome.professions.contains(searchText.lowercased())
-//
-//
-//            }
-//        }
-//    }
+    func filterHabProfession() {
+        if searchText.isEmpty {
+            filterHabitants = gnomes
+        } else {
+            filterHabitants = gnomes?.filter { habitant in
+               habitant.professions.contains { $0.lowercased().contains(searchText.lowercased())}
+
+            }
+        }
+    }
     
 }

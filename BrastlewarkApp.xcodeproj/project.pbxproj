@@ -16,6 +16,8 @@
 		B16FC9462BF80FCA00C227A5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC9452BF80FCA00C227A5 /* ViewModel.swift */; };
 		B16FC9482BF8100100C227A5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC9472BF8100100C227A5 /* HomeView.swift */; };
 		B16FC94A2BF8119700C227A5 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC9492BF8119700C227A5 /* PerfilView.swift */; };
+		B16FC94C2BF8269E00C227A5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC94B2BF8269E00C227A5 /* SearchView.swift */; };
+		B16FC94E2BF839EE00C227A5 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC94D2BF839EE00C227A5 /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		B16FC9452BF80FCA00C227A5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B16FC9472BF8100100C227A5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B16FC9492BF8119700C227A5 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
+		B16FC94B2BF8269E00C227A5 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		B16FC94D2BF839EE00C227A5 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 				B16FC9452BF80FCA00C227A5 /* ViewModel.swift */,
 				B16FC9472BF8100100C227A5 /* HomeView.swift */,
 				B16FC9492BF8119700C227A5 /* PerfilView.swift */,
+				B16FC94B2BF8269E00C227A5 /* SearchView.swift */,
+				B16FC94D2BF839EE00C227A5 /* SearchBarView.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -169,9 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B16FC9462BF80FCA00C227A5 /* ViewModel.swift in Sources */,
+				B16FC94E2BF839EE00C227A5 /* SearchBarView.swift in Sources */,
 				B16FC94A2BF8119700C227A5 /* PerfilView.swift in Sources */,
 				B16FC9342BF7F83400C227A5 /* ContentView.swift in Sources */,
 				B16FC9322BF7F83400C227A5 /* BrastlewarkAppApp.swift in Sources */,
+				B16FC94C2BF8269E00C227A5 /* SearchView.swift in Sources */,
 				B16FC9482BF8100100C227A5 /* HomeView.swift in Sources */,
 				B16FC9402BF80F2A00C227A5 /* APIClient.swift in Sources */,
 				B16FC9432BF80F8900C227A5 /* Model.swift in Sources */,

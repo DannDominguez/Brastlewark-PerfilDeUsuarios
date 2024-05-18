@@ -9,10 +9,47 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationStack{
+            VStack {
+                Text("Brastlewark Town")
+                    .fontDesign(.rounded)
+                    .fontWeight(.bold)
+                    .font(.system(size: 50))
+                    .foregroundStyle(.white)
+                    .padding(.top,-100)
+                
+                Text("*Find family, friends and workers*")
+                    .fontDesign(.rounded)
+                    .font(.system(size: 20))
+                    .frame(alignment: .center)
+                    .padding(50)
+                
+                
+                NavigationLink(destination: SearchView()) {
+                    Text("*Comenzar*")
+                        .font(.callout)
+                        .fontDesign(.default)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.pink)
+                        .cornerRadius(6)
+                }
+                
+                
+                
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(
+                LinearGradient(
+                    gradient: Gradient(colors: [.pink, .white]),
+                    startPoint: .top,
+                    endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
+            )
+        }
     }
 }
-
 #Preview {
     HomeView()
 }

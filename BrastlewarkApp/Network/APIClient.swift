@@ -9,9 +9,9 @@ import Foundation
 
 struct ApiClient {
     
-    func getData (Profession: String, completion: @escaping (Result<[BrastlewarkDataModel],Error>) -> Void ) {
+    func getData (completion: @escaping (Result<BrastlewarkDataModel,Error>) -> Void ) {
         
-        var request = URLRequest(url: URL(string: "https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json\(Profession)")!,timeoutInterval: Double.infinity)
+        var request = URLRequest(url: URL(string: "https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json")!,timeoutInterval: Double.infinity)
         request.httpMethod = "GET"
         
         URLSession.shared.dataTask(with: request) { data, response, error in
@@ -24,7 +24,7 @@ struct ApiClient {
             print(String(data: data, encoding: .utf8)!)
             
             do {
-                let result = try JSONDecoder().decode([BrastlewarkDataModel].self, from: data)
+                let result = try JSONDecoder().decode(BrastlewarkDataModel.self, from: data)
                 completion(.success(result))
             } catch {
                 print("Error decoding JSON:\(error)")

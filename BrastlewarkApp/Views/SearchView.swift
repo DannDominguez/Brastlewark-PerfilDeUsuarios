@@ -23,7 +23,7 @@ struct SearchView: View {
                             VStack(alignment: .leading) {
                                 Text("**Name: \(habitant.name)**")
                                 Text("*Profession: \(habitant.professions.joined(separator: ","))*")
-                                NavigationLink("See Habitant", destination: PerfilView())
+                                NavigationLink("See Habitant", destination: PerfilView(habitantView: habitant))
                                     
                             }
                             

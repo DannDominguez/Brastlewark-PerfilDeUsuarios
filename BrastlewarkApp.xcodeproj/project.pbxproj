@@ -18,6 +18,7 @@
 		B16FC94A2BF8119700C227A5 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC9492BF8119700C227A5 /* PerfilView.swift */; };
 		B16FC94C2BF8269E00C227A5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC94B2BF8269E00C227A5 /* SearchView.swift */; };
 		B16FC94E2BF839EE00C227A5 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC94D2BF839EE00C227A5 /* SearchBarView.swift */; };
+		B16FC9522BF93C5600C227A5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B16FC9512BF93C5600C227A5 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16FC9522BF93C5600C227A5 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +72,7 @@
 				B16FC9352BF7F83600C227A5 /* Assets.xcassets */,
 				B16FC9372BF7F83600C227A5 /* Preview Content */,
 				B16FC9442BF80F9000C227A5 /* Modules */,
+				B16FC94F2BF93B4600C227A5 /* Views */,
 				B16FC9412BF80F3200C227A5 /* Network */,
 			);
 			path = BrastlewarkApp;
@@ -96,12 +99,19 @@
 			isa = PBXGroup;
 			children = (
 				B16FC9452BF80FCA00C227A5 /* ViewModel.swift */,
-				B16FC9472BF8100100C227A5 /* HomeView.swift */,
-				B16FC9492BF8119700C227A5 /* PerfilView.swift */,
-				B16FC94B2BF8269E00C227A5 /* SearchView.swift */,
-				B16FC94D2BF839EE00C227A5 /* SearchBarView.swift */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		B16FC94F2BF93B4600C227A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B16FC9472BF8100100C227A5 /* HomeView.swift */,
+				B16FC94D2BF839EE00C227A5 /* SearchBarView.swift */,
+				B16FC94B2BF8269E00C227A5 /* SearchView.swift */,
+				B16FC9492BF8119700C227A5 /* PerfilView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +130,9 @@
 			dependencies = (
 			);
 			name = BrastlewarkApp;
+			packageProductDependencies = (
+				B16FC9512BF93C5600C227A5 /* Kingfisher */,
+			);
 			productName = BrastlewarkApp;
 			productReference = B16FC92E2BF7F83400C227A5 /* BrastlewarkApp.app */;
 			productType = "com.apple.product-type.application";
@@ -148,6 +161,9 @@
 				Base,
 			);
 			mainGroup = B16FC9252BF7F83400C227A5;
+			packageReferences = (
+				B16FC9502BF93C5600C227A5 /* XCRemoteSwiftPackageReference "KINGFISHER" */,
+			);
 			productRefGroup = B16FC92F2BF7F83400C227A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -388,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B16FC9502BF93C5600C227A5 /* XCRemoteSwiftPackageReference "KINGFISHER" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ONEVCAT/KINGFISHER";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B16FC9512BF93C5600C227A5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B16FC9502BF93C5600C227A5 /* XCRemoteSwiftPackageReference "KINGFISHER" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B16FC9262BF7F83400C227A5 /* Project object */;
 }

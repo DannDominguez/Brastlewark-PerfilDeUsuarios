@@ -18,36 +18,6 @@
             endingLineNumber = "44"
             landmarkName = "filterHabProfession()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "AA4F1BE6-2AFB-4501-B04D-E6DC818E3A4E - 3b969406167ea201"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (BrastlewarkApp.Habitant) -&gt; Swift.Bool in BrastlewarkApp.BrastlewarkViewModel.filterHabProfession() -&gt; ()"
-                  moduleName = "BrastlewarkApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dann/Desktop/BrastlewarkApp/BrastlewarkApp/Modules/ViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44">
-               </Location>
-               <Location
-                  uuid = "AA4F1BE6-2AFB-4501-B04D-E6DC818E3A4E - 96736bf7b86df307"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.String) -&gt; Swift.Bool in closure #1 (BrastlewarkApp.Habitant) -&gt; Swift.Bool in BrastlewarkApp.BrastlewarkViewModel.filterHabProfession() -&gt; ()"
-                  moduleName = "BrastlewarkApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dann/Desktop/BrastlewarkApp/BrastlewarkApp/Modules/ViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

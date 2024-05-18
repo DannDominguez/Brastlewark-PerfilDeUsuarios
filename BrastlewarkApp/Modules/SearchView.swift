@@ -22,11 +22,9 @@ struct SearchView: View {
                         ForEach(viewModelSV.filterHabitants ?? [], id: \.id) { habitant in
                             VStack(alignment: .leading) {
                                 Text("**Name: \(habitant.name)**")
-                                Text("*Profession: \(habitant.professions.joined(separator: ","))*") {
-                                    NavigationLink( destination: PerfilView()) {
-                                    }
+                                Text("*Profession: \(habitant.professions.joined(separator: ","))*")
+                                NavigationLink("See Habitant", destination: PerfilView())
                                     
-                                }
                             }
                             
                         }

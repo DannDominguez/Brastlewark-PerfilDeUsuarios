@@ -28,7 +28,7 @@ struct HomeView: View {
                 
                 NavigationLink(destination: SearchView()) {
                     Text("*Comenzar*")
-                        .font(.callout)
+                        .font(.title2)
                         .fontDesign(.default)
                         .foregroundColor(.white)
                         .padding()

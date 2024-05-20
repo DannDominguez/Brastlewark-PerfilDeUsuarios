@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchBarView: View {
     @State var viewModel: BrastlewarkViewModel
-    //@State var SearchText: String
+   
     
     var body: some View {
         HStack {

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct SearchView: View {
     @ObservedObject var viewModelSV = BrastlewarkViewModel()
-    //@State var SearchText = ""
     
     var body: some View {
         NavigationStack {
